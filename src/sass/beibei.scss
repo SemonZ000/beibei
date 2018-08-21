@@ -1,0 +1,19 @@
+$fl:left;
+$fr:right;
+body,html{height: 100%;width: 100%;min-width: 1080px;}
+#box{min-width: 1000px;}
+#login{
+    height: 29px;background-color:#f4f4f4;
+    .container ul{
+        float: $fr;
+        li{
+            float: $fr;
+            a{
+                float: $fr;width:96px;font-size:12px;
+                span{
+                    border-right:1px solid #ccc;
+                }
+            }
+        }
+    }
+}

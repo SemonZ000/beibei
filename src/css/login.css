@@ -1,0 +1,20 @@
+.top{height: 105px;padding-top: 45px;overflow: hidden;}
+.top .container{height: 105px;}
+.top h1{background: url("../img/logo.png") no-repeat;float: left;width: 250px;height: 60px;}
+.top span{background:url("../img/top.png") no-repeat;float:right;width: 360px;height: 60px;}
+.main{height: 719px;}
+.main .container{height: 719px;}
+
+.main-l{background:url("../img/login.png") no-repeat;width: 500px;height: 354px;float:left;}
+.main-r{height: 499px;width: 402px;border:1px solid #ccc;float:right;}
+.main-r-t ul{padding:30px 35px;}
+.main-r-t li{float:left;font-size: 13px;}
+.main-r-t .three{float:right;}
+.main-r-t .two{float:right;}
+.form{padding: 10px 35px;}
+.main-r-c input{height: 30px;width: 298px;border:1px solid #ccc;margin-top: 20px;}
+.yzm{height: 30px;width: 80px;padding-bottom: 15px;font-size: 14px;line-height: 30px;}
+.main-r-c .check{width: 160px;}
+.btn{color: #fff;background: #ff4965;display: block;height: 32px;line-height: 32px;border-radius: 3px;text-align: center;font-size: 14px;letter-spacing: 6px;margin-top: 30px;}
+.main-r-b{font-size: 12px;padding: 50px 35px;}
+.main-r-b span{color:#ff4965;}

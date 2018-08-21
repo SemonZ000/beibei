@@ -1,0 +1,9 @@
+.minimum{height: 202px;color: #666;}
+.minimum-nav{border-top:3px solid #ff5482;background: #555;padding: 10px 0;color: #ddd;height:24px;min-width: 1000px;}
+.minimum-nav ul{padding:0 150px;}
+.minimum-nav li{float:left;}
+.minimum-nav a{float:left;color:#ddd;font-size:12px ;line-height: 24px;}
+.minimum-nav span{border-right: 1px solid #ccc;height: 14px;padding:0 10px;}
+.minimum-content{font-size: 12px;text-align: center;}
+.m-t p{margin:0 auto;color:#999;}
+

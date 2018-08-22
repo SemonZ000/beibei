@@ -5,8 +5,10 @@
     $sql=$conn->query($name);
     $row = $sql->fetch_all(MYSQLI_ASSOC);
     echo json_encode($row, JSON_UNESCAPED_UNICODE);
-     // $name="select name from beibei";
-     // $sql=$conn->query($name);
-     // $row = $sql->fetch_all(MYSQLI_ASSOC);
-     // echo json_encode($row)
+
+
+    // $username = isset($_GET['name']) ? $_GET['name'] : null; 
+    // $all="select * from beibei WHERE name='username'";
+    // $ss=$conn->query($all);
+    
 ?>

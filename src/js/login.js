@@ -15,28 +15,5 @@ jQuery(function($){
             yzm.html(sj);
         })
 
-        $('.btn').click(function () {
-            var _yzm = sj;
-            var code = document.querySelector('.check').value;
-            http.post('../api/login.php', {
-                username: $('#username').val().trim(),
-                password: $('#password').val().trim()
-            }).then(function (res) {
-                var res = window.eval('(' + res + ')')
-                console.log(res);
-                if (res.state) {
-                    if (code == _yzm) {
-                        
-                        window.location.href = "http://localhost:10088";
-                    } else {
-                        alert('验证码错误');
-                    }
-
-                } else {
-                    alert('用户名or密码有误，请重新输入');
-                }
-            }).catch(function (error) {
-                console.log(error);
-            })
-        })
+        
 })

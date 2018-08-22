@@ -15,6 +15,6 @@
 .main-r-c input{height: 30px;width: 298px;border:1px solid #ccc;margin-top: 20px;}
 .yzm{height: 30px;width: 80px;padding-bottom: 15px;font-size: 14px;line-height: 30px;}
 .main-r-c .check{width: 160px;}
-.btn{color: #fff;background: #ff4965;display: block;height: 32px;line-height: 32px;border-radius: 3px;text-align: center;font-size: 14px;letter-spacing: 6px;margin-top: 30px;}
+.main-r-c .btn{color: #fff;background: #ff4965;display: block;height: 32px;line-height: 32px;border-radius: 3px;text-align: center;font-size: 14px;letter-spacing: 6px;margin-top: 30px;width: 298px;}
 .main-r-b{font-size: 12px;padding: 50px 35px;}
 .main-r-b span{color:#ff4965;}

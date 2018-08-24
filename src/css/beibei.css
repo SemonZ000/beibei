@@ -1,9 +1,9 @@
-body, html { height: 100%; min-width: 1080px;position:relative;width: 1263px;}
-.convenient{position:fixed;z-index: 2000;right:0;width: 72px;background: #fff;border: 1px solid #e6e6e6;border-top: none;opacity: .75;transform: translateZ(0);overflow:hidden;}
+body, html { min-width: 1080px;position:relative;}
+.convenient{position:fixed;right:0;width: 72px;background: #fff;border: 1px solid #e6e6e6;border-top: none;opacity: .75;transform: translateZ(0);overflow:hidden;}
 .convenient li{width: 70px;height: 40px;border-top: 1px solid #ccc;}
 .convenient a{font-size: 14px;color:#fff;padding-top: 20px;line-height: 40px;padding-left: 15px;color:blue;}
 
-#box { min-width: 1000px; }
+#box { min-width: 1000px;width: 100%;}
 /*头部与导航*/
 .login { height: 29px; background-color: #f4f4f4; }
 .login ul{float:right;}
@@ -25,10 +25,14 @@ body, html { height: 100%; min-width: 1080px;position:relative;width: 1263px;}
 
 
 .nav{height: 38px;background-color: #ff647c;position:relative;}
-.ification-sub{display:none;position:absolute;right:80px;top:38px;border:1px solid #ccc;width: 490px;;overflow:hidden;background-color:white;}
+.ification-sub{position:absolute;right:80px;top:66px;border:1px solid #ccc;width: 490px;;overflow:hidden;background-color:white;display:none;}
 .ification-sub-l{float:left;}
 .ification-sub-l li{width:80px;height:34px;background-color: #FFF;border-bottom:1px solid #ccc;cursor: pointer;border-right: 1px solid #CCC;}
 .ification-sub a{font-size: 14px;color:#BBB;line-height:40px;text-align: right;}
+.ification-sub ul{padding: 10px;padding-bottom: 0;}
+.ification-sub-r img{width: 60px;height: 60px;float:left;}
+.ification-sub-r li{text-align: center;padding: 15px 14px 0 14px;float: left;width: 60px;height: 93px;border-right: 1px dashed #ececec;border-bottom: 1px dashed #ececec;overflow: hidden;cursor: pointer;}
+.ification-sub-r a{ width: 60px;height: 78px;}
 .nav-left ul{float: left;}
 .nav-left li{float:left;}
 .nav-left a{float: left;color:#fff;width: 95px;font-size: 15px;font-weight: 700;line-height: 38px;text-align: center;}
@@ -41,6 +45,7 @@ body, html { height: 100%; min-width: 1080px;position:relative;width: 1263px;}
 
 .banner{height: 320px;width: 1400px;background:url("../img/banner.png") no-repeat;}
 .main{height: 3000px;}
+.main-c-rb img{width: 70px;height: 70px;float:left;}
 
 .classify{float:right;}
 .classify span{font-size: 14px;display: inline-block;width: 100px;height: 35px;text-align:right;padding-right: 5px;line-height: 30px;}
@@ -67,14 +72,17 @@ body, html { height: 100%; min-width: 1080px;position:relative;width: 1263px;}
 .main-c-r ul{height: 31px;font-size: 13px;}
 .main-c-r li{line-height: 30px;width: 61px;float:left;border-bottom: 1px solid #dbdbdb;border-right: 1px solid #dbdbdb;text-align: center;color:#787878;}
 .main-c-rb li{width: 248px;height:90px;}
-.main-c-l li{width: 254px;height: 330px;float:left;border:1px solid #ccc;margin-right:20px;margin-top: 10px;}
+.main-c-l li{width: 254px;height: 330px;float:left;border:1px solid #ccc;margin-right:20px;margin-top: 10px;box-shadow: 0 0 3px #eee;}
 .main-c-l li img{width: 254px;height: 255px;}
-.main-c-l a{font-size: 14px;color:#bbb;height: 30px;}
-.main-c-l p{font-size: 18px;color:red;padding-left: 20px;}
+.main-c-l a{font-size: 14px;color:black;height: 30px;}
+.main-c-l p{font-size: 18px;color:red;padding-top: 10px;font-weight:bold;}
 .main-c-l strong{font-size: 12px;float:right;color:#CCC;}
 .main-b{background:url("../img/main.png") no-repeat;height: 90px;width: 1800px;position:absolute;bottom:0;}
 .bottom{height: 222px;background:#f1f1f1;border-top:1px solid #ccc;}
 .bottom .container{height: 222px;}
 .bottom-t{height: 150px;border-bottom: 1px solid #E9E1E8;}
+.bottom-t dl{border-left: 1px solid #FDFDFD;border-right: 1px solid #E9E1E8;float: left;height: 120px;margin: 15px 0;padding: 0 0 0 20px;width: 115px;text-align:left;}
+.bottom-t dt a{color: #777;font-size: 14px;padding-left: 9px;}
+.bottom-t dd a{display: block;height: 22px;line-height: 22px;overflow: hidden;padding-left: 9px;color: #888;font-size: 12px;}
 .bottom-b a{background:url('../img/bigb.png') no-repeat;width: 950px;height: 70px;float:left;display:block;}
 

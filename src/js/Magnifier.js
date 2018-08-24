@@ -14,8 +14,8 @@
 
         var defaults = {
             // 大图区域宽高
-            width:300,
-            height:200,
+            width:400,
+            height:400,
 
             // 位置：right,bottom,left,top
             position:'right',
@@ -51,7 +51,7 @@
             var ratio;
 
             // 创建大图容器,并写入页面
-            var $big = $('<div/>').addClass('lx-bigzoom').appendTo('body');
+            var $big = $('<div/>').addClass('lx-bigzoom').appendTo('.main-c-l');
             var $bigImg
 
             // 设置大图区域的显示位置：left,top,right(默认),bottom

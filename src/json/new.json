@@ -1,42 +1,142 @@
 [
     {
-        "ifiname":"热门项目",
-        "img":"../img/xiao1.png"
+        "name":"热门项目",
+        "img":"../img/xiao1.png",
+        "price":33,
+        "sale":1.3,
+        "reg_time":"2019-9-10"
     },
     {
-        "ifiname":"热门项目",
-        "img":"../img/xiao2.png"
+        "name":"热门项目",
+        "img":"../img/xiao1.png",
+        "price":33,
+        "sale":1.3,
+        "reg_time":"2019-9-10"
     },
     {
-        "ifiname":"热门项目",
-        "img":"../img/xiao4.png"
+        "name":"热门项目",
+        "img":"../img/xiao1.png",
+        "price":33,
+        "sale":1.3,
+        "reg_time":"2019-9-10"
     },
     {
-        "ifiname":"热门项目",
-        "img":"../img/xiao2.png"
+        "name":"热门项目",
+        "img":"../img/xiao1.png",
+        "price":33,
+        "sale":1.3,
+        "reg_time":"2019-9-10"
     },
     {
-        "ifiname":"热门项目",
-        "img":"../img/xiao1.png"
+        "name":"热门项目",
+        "img":"../img/xiao1.png",
+        "price":33,
+        "sale":1.3,
+        "reg_time":"2019-9-10"
     },
     {
-        "ifiname":"热门项目",
-        "img":"../img/xiao3.png"
+        "name":"热门项目",
+        "img":"../img/xiao1.png",
+        "price":33,
+        "sale":1.3,
+        "reg_time":"2019-9-10"
     },
     {
-        "ifiname":"热门项目",
-        "img":"../img/xiao3.png"
+        "name":"热门项目",
+        "img":"../img/xiao1.png",
+        "price":33,
+        "sale":1.3,
+        "reg_time":"2019-9-10"
     },
     {
-        "ifiname":"热门项目",
-        "img":"../img/xiao2.png"
+        "name":"热门项目",
+        "img":"../img/xiao1.png",
+        "price":33,
+        "sale":1.3,
+        "reg_time":"2019-9-10"
     },
     {
-        "ifiname":"热门项目",
-        "img":"../img/xiao3.png"
+        "name":"热门项目",
+        "img":"../img/xiao1.png",
+        "price":33,
+        "sale":1.3,
+        "reg_time":"2019-9-10"
     },
     {
-        "ifiname":"热门项目",
-        "img":"img/xiao1.jpg"
+        "name":"热门项目",
+        "img":"../img/xiao1.png",
+        "price":33,
+        "sale":1.3,
+        "reg_time":"2019-9-10"
+    },
+    {
+        "name":"热门项目",
+        "img":"../img/xiao1.png",
+        "price":33,
+        "sale":1.3,
+        "reg_time":"2019-9-10"
+    },
+    {
+        "name":"热门项目",
+        "img":"../img/xiao1.png",
+        "price":33,
+        "sale":1.3,
+        "reg_time":"2019-9-10"
+    },
+    {
+        "name":"热门项目",
+        "img":"../img/xiao1.png",
+        "price":33,
+        "sale":1.3,
+        "reg_time":"2019-9-10"
+    },
+    {
+        "name":"热门项目",
+        "img":"../img/xiao1.png",
+        "price":33,
+        "sale":1.3,
+        "reg_time":"2019-9-10"
+    },
+    {
+        "name":"热门项目",
+        "img":"../img/xiao1.png",
+        "price":33,
+        "sale":1.3,
+        "reg_time":"2019-9-10"
+    },
+    {
+        "name":"热门项目",
+        "img":"../img/xiao1.png",
+        "price":33,
+        "sale":1.3,
+        "reg_time":"2019-9-10"
+    },
+    {
+        "name":"热门项目",
+        "img":"../img/xiao1.png",
+        "price":33,
+        "sale":1.3,
+        "reg_time":"2019-9-10"
+    },
+    {
+        "name":"热门项目",
+        "img":"../img/xiao1.png",
+        "price":33,
+        "sale":1.3,
+        "reg_time":"2019-9-10"
+    },
+    {
+        "name":"热门项目",
+        "img":"../img/xiao1.png",
+        "price":33,
+        "sale":1.3,
+        "reg_time":"2019-9-10"
+    },
+    {
+        "name":"热门项目",
+        "img":"../img/xiao1.png",
+        "price":33,
+        "sale":1.3,
+        "reg_time":"2019-9-10"
     }
 ]

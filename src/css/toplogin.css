@@ -20,7 +20,7 @@
 .nav-left ul{float: left;}
 .nav-left li{float:left;}
 .nav-left a{float: left;color:#fff;width: 95px;font-size: 15px;font-weight: 700;line-height: 38px;text-align: center;}
-.nav-b{height: 30px;}
+.nav-b{height: 30px;box-shadow: 0 1px 5px #bbb;}
 .nav-b .container{border:1px solid #ccc;height: 30px;position: relative;}
 .nav-b ul{float:left;}
 .nav-b li{float:left;}

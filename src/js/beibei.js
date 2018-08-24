@@ -55,15 +55,15 @@ jQuery(function($){
           var c = $(document).scrollTop();
         // a.addClass("suctionTop")
           if(b.top<=c){
-            a.css({'position':'fixed','top':'0px','background':"#fff",'height':'40px','line-height':'55px'})
+            a.css({'position':'fixed','top':'0px','z-index':'333','background':"#fff",'height':'40px','line-height':'55px'})
             }
             else{
               a.css({'position':'absolute','top':'157px','right':'80px','height':'33px','line-height':'33px'})
               }
          })
       });
-     show($(".main-c-l"),"beibei","data")
-     function show(ele,res,dd){
+     show($(".main-c-l"))
+     function show(ele){
         // let mainCL= $(".main-c-l");
         let status=[200,304];
         // console.log(ele)
@@ -77,29 +77,38 @@ jQuery(function($){
                 ul.className="uu";
 
                 ul.innerHTML=dd.map((item,idx)=>{
-                  return `<li><a href="../html/goodslist.html"><img src=${item.img}><span>${item.name}</span></a><p>￥${item.price}</p><strong>${item.Discount}</strong></li>` 
+                  return `<li class="crtl"><a href="../html/goodslist.html"><img src=${item.img} class="add2cart"><span>${item.name}</span></a><p>￥${item.price}</p><strong>${item.Discount}</strong></li>` 
                 }).join("")
                 ele.html(ul)
+               
             }
-            // let goods = $(".uu");
-            
-            // goods.on("click","li",function(){
-            //     // let xhr2 = new XMLHttpRequest();
-            //     // xhr2.onload=function(){
-            //     //   if(status.indexOf(xhr.status)>=0){
-            //     //     let data2=JSON.parse(xhr.responseText);
-            //     //   }
-            //     // }getElementsByTagName("span")[0].
-                
-            //     // xhr2.open("get","../api/goods.php?username="+username,true);
-            //     // xhr2.send();
-            //     let img=this.getElementsByTagName("img")[0].src;
-            //     let username=this.getElementsByTagName("span")[0].innerHTML;
-            //     document.cookie = 'username=' + username ;
-            //     document.cookie = 'img=' + img ;
+            var shu = 1;
+            var shop = []
+            $('.crtl').on('click',function(){
+              var ddidx = $(this).index();
+              var data = dd[ddidx]
+                if(data.id == data.id){
+                data.regtime++
+                console.log(data)
+              }
+             
+              // dd[shu]=shu
+              shop.push(data)
+
+              document.cookie= JSON.stringify(shop )
+                          })
+
+
+
+
+            let goods = $(".uu");
+            console.log($('.namm'))
+            // $('.namm').on('mouseover',function(){
+            //   console.log(123)
             // })
+       
         }
-        xhr.open("get","../api/"+res+".php");
+        xhr.open("get","../api/beibei.php");
         xhr.send();
 
         
@@ -118,14 +127,55 @@ jQuery(function($){
      })
     
      
-     console.log($(".main-c-r .children"))
-  
-      $(".main-c-r .children").on("mouseover","li",function(){
-            
-        })
+     $(".c-r").on("mouseover",function(){
+       var username=this.innerText
+        let status=[200,304];
+        // console.log(ele)
+        var xhr=new XMLHttpRequest();
+        xhr.onload=function(){
+            if(status.indexOf(xhr.status)>=0){
+                var data = JSON.parse(xhr.responseText);
+                var ul = document.createElement("ul");
+
+                ul.innerHTML=data.map((item,idx)=>{
+                  return `<li class="crtl"><a href="../html/goodslist.html"><img src=${item.img} class="add2cart"><span>${item.name}</span></a><p>￥${item.price}</p></li>` 
+                }).join("")
+                $(".main-c-rb").html(ul)
+
+            }
+        
+        }
+        xhr.open("get","../api/cr.php?username="+username,true);
+        xhr.send();
+        
+     });
+
+     $(".namm").on("mouseover",function(){
+       var username=this.innerText
+        let status=[200,304];
+        console.log(this.innerText)
+        var xhr=new XMLHttpRequest();
+        xhr.onload=function(){
+            if(status.indexOf(xhr.status)>=0){
+                var data = JSON.parse(xhr.responseText);
+                var ul = document.createElement("ul");
+
+                ul.innerHTML=data.map((item,idx)=>{
+                  return `<li class="crtl"><a href="../html/goodslist.html"><img src=${item.img} class="add2cart"><span>${item.name}</span></a><p>￥${item.price}</p></li>` 
+                }).join("")
+                $(".ification-sub-r").html(ul)
+
+            }
+        
+        }
+        xhr.open("get","../api/cr.php?username="+username,true);
+        xhr.send();
+        
+     })
       
     
 
 
 
-})
+});
+

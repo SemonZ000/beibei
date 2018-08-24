@@ -1,4 +1,4 @@
 .suctionTop{position:fixed;top:0;}
-.liRed{background:red;color:white;font-weight: 700;}
-.noBorderB{border-bottom: 0 none;}
+.liRed{background:pink;color:white;font-weight: 700;}
+.noBorderB{border-bottom:1px solid #fff;}
 .borderB{border-bottom: 2px solid red;}

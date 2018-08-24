@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded',()=>{
                             
                         }else if(xhr.responseText === 'no'){
                             isok = false;
-                            
+                            alert("用户名已存在")
                         }
                     }
                 }

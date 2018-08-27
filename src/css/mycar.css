@@ -1,19 +1,25 @@
 #box{background:#f2f4f6;}
 .login .container,.top,.main{background:#fff;}
+.main{min-height: 1000px;}
 .main-t-t{height: 440px;}
 .main-tt{height: 70px;background:#f2f4f6;font-size: 30px;font-weight: bold;color:#CCC;line-height: 70px;padding-left: 20px;}
+
 .tab{height: 242px;border:1px solid #CCC;width: 1078px;margin-top: 30px;}
 .tab thead th{border-width: 0 0 0 1px;font-size:inherit;margin: 0;overflow: visible;padding: 6px 12px;}
 .tab thead{height: 30px;border:1px solid #ccc;background:#f2f4f6;}
-.tab .tb{height: 212px;border:1px solid #ccc;}
-.tab .tb tr{border:1px solid #ccc;}
+.tab .tb{border:1px solid #ccc;}
+/*.tab .tb tr{border:1px solid #ccc;display:block;}
 .tab .tb tr:nth-child(1){height: 15px;border-bottom: 1px solid #ccc;}
-.tab .tb tr:nth-child(2){height: 42px;background:#f2f4f6;}
-.tab .tb .three{height: 103px;border-bottom:1px solid #ccc;}
-.tab .tb .three td{padding-left:30px;}
-.tab .tb .three img{width: 40px;height: 50px;}
-.main-tb{border-width: 0 0 0 1px;font-size:inherit;margin: 0;overflow: visible;padding: 6px 12px;}
+.tab .tb tr:nth-child(2){height: 42px;background:#f2f4f6;}*/*/
+.three{height: 103px;border-bottom:1px solid #ccc;}
+.three{padding-left:30px;}
+.three ul{height: 100px;}
+.three ul li:last-child{padding-right: 0;}
+.three li{float:left;margin-top: 20px;height:80px;padding-right:110px;}
+.three img{width: 40px;height: 50px;}
+.main-tb{border-width: 0 0 0 1px;font-size:inherit;margin: 0;overflow: visible;padding: 6px 12px;min-height: 61px;}
 .tab .num{width: 30px;text-align: center;}
+.main-b{height: 100px;}
 .main-tb{background:#f2f4f6;height: 61px;border:1px solid #ccc;}
 .main-tb span{padding-left: 40px;}
 .main-tb p{float:right;height: 60px;width:120px;background:red;color:#fff;font-size:18px;font-weight: bold;line-height:60px;text-align: center;border:1px solid #ccc;}

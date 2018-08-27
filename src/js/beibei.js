@@ -10,6 +10,10 @@ jQuery(function($){
 // require(["jquery","html"],function(){
 
 // })
+    window.onbeforeunload = function(){
+        var timers =new Date();
+        document.cookie="username="+""+";expires="+timers;
+    }
     
     
     let navB = $(".nav-b .container ul");
@@ -18,7 +22,7 @@ jQuery(function($){
     
 
     //鼠标划过变色
-    $(".convenient").on("mouseover","li",function(){
+    $(".convenient-r").on("mouseover","li",function(){
 
         $(this).addClass('liRed').siblings().removeClass('liRed');
     })
@@ -50,12 +54,14 @@ jQuery(function($){
     //吸顶
      $(function(){
         var a = $('.nav-b .container'),
+        
         b =a.offset();
         $(document).on('scroll',function(){
           var c = $(document).scrollTop();
         // a.addClass("suctionTop")
           if(b.top<=c){
             a.css({'position':'fixed','top':'0px','z-index':'333','background':"#fff",'height':'40px','line-height':'55px'})
+
             }
             else{
               a.css({'position':'absolute','top':'157px','right':'80px','height':'33px','line-height':'33px'})
@@ -77,35 +83,32 @@ jQuery(function($){
                 ul.className="uu";
 
                 ul.innerHTML=dd.map((item,idx)=>{
-                  return `<li class="crtl"><a href="../html/goodslist.html"><img src=${item.img} class="add2cart"><span>${item.name}</span></a><p>￥${item.price}</p><strong>${item.Discount}</strong></li>` 
+                  return `<li class="crtl"><a href="../html/goodslist.html" target="_blank" ><img src=${item.img} class="add2cart"><span class="carName">${item.name}</span></a><p>￥${item.price}</p><strong>${item.Discount}</strong></li>` 
                 }).join("")
                 ele.html(ul)
                
             }
             var shu = 1;
-            var shop = []
+            var shop = [];
+            
             $('.crtl').on('click',function(){
+              var timer =new Date();
               var ddidx = $(this).index();
               var data = dd[ddidx]
                 if(data.id == data.id){
                 data.regtime++
                 console.log(data)
               }
+               shop.push(data);
+               // JSON.stringify(shop)
+               // $.cookie('the_cookie',JSON.stringify(shop), { expires: 7 });
+               // $.cookie('the_cookie', 'the_value');
+              document.cookie="username="+JSON.stringify(shop)+";expires="+timer;
+              var a =  localStorage.setItem("data",JSON.stringify(data))
              
-              // dd[shu]=shu
-              shop.push(data)
-
-              document.cookie= JSON.stringify(shop )
-                          })
+          })
 
 
-
-
-            let goods = $(".uu");
-            console.log($('.namm'))
-            // $('.namm').on('mouseover',function(){
-            //   console.log(123)
-            // })
        
         }
         xhr.open("get","../api/beibei.php");
@@ -171,11 +174,45 @@ jQuery(function($){
         xhr.open("get","../api/cr.php?username="+username,true);
         xhr.send();
         
-     })
+     });
       
+    $('.shopCar').on('mouseover',function(){
+        var shoping = document.cookie
+        var shop = window.eval('('+shoping+')')
+        let ul =document.createElement('ul');
+        ul.innerHTML=shop.map(item=>{
+          return `<li><img src=${item.img}> <span>${item.name}<span> <p>￥${item.price}</p></li>`
+        }).join("");
+        $('.convenient-l .con-car .con-car-c').html(ul)
+       
+    })
     
+     $('.convenient-l .con-car .con-car-c')
+
+     $(".shopCar").on("mouseover",function(){
+        $('.convenient-l .con-car').css({"display":"block"})
+     })
+     $('.convenient-l .con-car').on("mouseover",function(){
+        $('.convenient-l .con-car').css({"display":"block"})
+     })
+     $('.convenient-l .con-car').on("mouseout",function(){
+        $('.convenient-l .con-car').css({"display":"none"})
+     })
 
 
 
+
+     // $btnSearch.on('click',function(){
+     //    var key = $keyword.val();
+
+     //    // 筛选出包含key关键字的tr
+     //    // 链式调用
+     //    $trs.removeClass('selected').find(':checkbox').prop('checked',false);
+     //    $trs.filter(':contains('+key+')').addClass('selected').find(':checkbox').prop('checked',true);
+     //  })
+     //  
+     // $(".crtl").on("click",function(){
+        
+     // })
 });
 

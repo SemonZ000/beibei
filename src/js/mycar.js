@@ -2,64 +2,84 @@ jQuery(function($){
     var shoping = document.cookie
     var shop = window.eval('('+shoping+')')
     console.log(shop)
-    let tr=document.createElement("tr");
-    tr.className="three";
-    tr.innerHTML=shop.map(item=>{
-        return `<td><input type="checkbox" class="only"></td><td class="lik"><img src=${item.img}></td><td>${item.name}</td><td>${item.price}</td><td>${item.regtime}</td><td>${item.regtime*item.price}</td><td class="del">删除</td>`
+    let main_tc2=document.getElementsByClassName("main-tc2")[0];
+    main_tc2.className="three";
+    main_tc2.innerHTML=shop.map(item=>{
+      return `<ul><li><input type="checkbox" class="only"></li><li class="lik"><img src=${item.img}></li><li>${item.name}</li><li>${item.price}</li><li>${item.regtime}</li><li>${item.regtime*item.price}</li><li class="del">删除</li></ul>`
     }).join('')
-    $(".tb").html(tr)
+
+
+    // var timer = new Date().toUTCString();
+    // console.log(timer)
+    // var ccc=timer.setDate(timer.getDate()-1)
+    // var aa= document.cookie=";expirse="+
+    
+    // var expire= new Date();
+    // var expiresDate.setTime(expire.getTime() + (? * 60 * 1000));
+    // //?替换成分钟数如果为60分钟则为 60 * 60 *1000
+    // $.cookie("__cookie__", 'helloworld',{
+    //   path : '/',
+    //   expires : expiresDate
+    //  });
+
+    
+
+
+
    $('.del').on('click',function(){
+        // var timers = new Date();
         $(this).parent().remove()
+        // var aa=document.cookie;
+        // document.cookie-
+        // document.cookie="username="+""+";expires="+timers;
+
    })
 
+       var $checkbox = $('.only');
+       var $trs = $('.three li');
+      $('.allDel').on('click',function(){
+          $('.three').remove()
+        
+          // var timers = new Date();
+          // document.cookie="username="+""+";expires="+timers;
 
-   //全选反选
-   (function(){
-        // var del = document.getElementsByClassName("del");
-        //        for(var i=0;i<del.length;i++){
-        //         del[i].onclick = function(){
-        //             var thisDel = this.parentNode.parentNode;
-        //             thisDel.parentNode.removeChild(thisDel);
-        //             var fir = tbody.children;
-        //             for(var i=0;i<fir.length;i++){
-        //                 fir[i].children[1].innerText = i+1;
-        //             }
-        //         }
-        //        }
+      })
+        // window.onbeforeunload = function(){
+        //     var timerss =new Date();
+        //     document.cookie="username="+""+";expires="+timerss;
+        // }
+      // 全选/不选
+      $('.all').click(function(){
 
-
-               var input = document.getElementsByTagName("input");
-                var input1 = document.getElementsByTagName("input")[0];
-                console.log(input1,input)
-                input1.onclick = function(){
-                for(var i=0;i<input.length;i++){
-                            input[i].checked = input1.checked;
-                        }
-                        
-                    }
-                
-               for(var i=1;i<input.length;i++){
-                    input[i].onclick = function(){
-                        var thisTd = this.parentNode.parentNode;
-                        if(this.checked){
-                            thisTd.className = "huang";
-                        }
-                        else{thisTd.className = "";}
-                        input1.checked = isCheckAll();
-                    }
+        $checkbox.prop('checked',this.checked);
+      });
 
 
-               }
-               function isCheckAll(){
-                var res = true;
-                for(var i=1;i<input.length;i++){
-                    if(!input[i].checked){
-                        res = false;
-                        break;
-                    }
-                }
-                return res;
-            }
-   })();
+      // 反选
+      // $('#btnFx').on('click',function(){
+      //   $checkbox.each(function(idx,item){
+      //     $(item).prop('checked',!this.checked);
+      //     // $trs.eq(idx)[this.checked?'addClass':'removeClass']('selected');
+      //   });
+
+      //   checkAll();
+      // });
+
+
+      // 点击任意位置勾选当前行
+      // $('.three').on('click','li',function(){
+      //   var $currentTr = $(this).closest("input");
+      //   $currentTr.toggleClass('liRed');
+      //  $currentTr.find('input').prop("checked",$currentTr.hasClass('liRed'))
+       
+      //   // $currentTr.toggleClass('selected');
+
+      //   // 查找当前tr下的:checkbox
+      //   // $currentTr.find('.only').prop('checked');
+
+      //   // checkAll();
+      // });
+
+   
 })
 

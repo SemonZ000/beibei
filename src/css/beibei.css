@@ -1,9 +1,16 @@
-body, html { min-width: 1080px;position:relative;}
-.convenient{position:fixed;right:0;width: 72px;background: #fff;border: 1px solid #e6e6e6;border-top: none;opacity: .75;transform: translateZ(0);overflow:hidden;}
-.convenient li{width: 70px;height: 40px;border-top: 1px solid #ccc;}
-.convenient a{font-size: 14px;color:#fff;padding-top: 20px;line-height: 40px;padding-left: 15px;color:blue;}
+body, html {width: 1262px;}
 
-#box { min-width: 1000px;width: 100%;}
+#box { min-width: 1080px;position:relative;}
+.convenient{position:relative;}
+.convenient-r{position:fixed;right:0;width: 72px;background: #fff;border: 1px solid #e6e6e6;border-top: none;opacity: .75;transform: translateZ(0);overflow:hidden;z-index: 900;}
+
+.convenient-r li{width: 70px;height: 40px;border-top: 1px solid #ccc;}
+.convenient-r a{font-size: 14px;color:#fff;padding-top: 20px;line-height: 40px;padding-left: 15px;color:blue;}
+/*.convenient-l{width: 100px;height: 100px;border:1px solid #ccc;position:absolute;left:-70px;top:0;background:red;}*/
+.convenient-l .con-car{width: 300px;border:1px solid red;position:fixed;right:72px;top:100px;background:white;z-index: 500;display:none;}
+.convenient-l .con-car h3{border-bottom: 1px solid red;color:red;}
+.convenient-l .con-car li{border-bottom: 1px solid red;padding-top: 10px;}
+.convenient-l .con-car-c img{width: 50px;height: 40px;float:left;margin-right: 10px;}
 /*头部与导航*/
 .login { height: 29px; background-color: #f4f4f4; }
 .login ul{float:right;}
@@ -43,7 +50,7 @@ body, html { min-width: 1080px;position:relative;}
 .nav-b a{float:left;font-size: 12px;color:#999;line-height: 30px;}
 .nav-b li:last-child a{float:right;font-size: 14px;background-color: #ccc;color:#ff506b;position: absolute;right:0;width: 90px;text-align: center;padding-left: 20px;}
 
-.banner{height: 320px;width: 1400px;background:url("../img/banner.png") no-repeat;}
+.banner{height: 320px;width: 1262px;background:url("../img/banner.png") no-repeat;}
 .main{height: 3000px;}
 .main-c-rb img{width: 70px;height: 70px;float:left;}
 
@@ -67,7 +74,7 @@ body, html { min-width: 1080px;position:relative;}
 .main-nav h2{font-weight: 700;font-size: 18px;float:left;margin-top: 30px;}
 .main-nav h2 span{font-size: 18px;float:left;}
 .main-nav p{font-size: 13px;position:absolute;right:30px;}
-.main-c{position:relative;z-index: 1000;}
+.main-c{position:relative;}
 .main-c-r{width: 250px;height: 578px;border:1px solid #ccc;float:right;position:absolute;right:0;top:15px;}
 .main-c-r ul{height: 31px;font-size: 13px;}
 .main-c-r li{line-height: 30px;width: 61px;float:left;border-bottom: 1px solid #dbdbdb;border-right: 1px solid #dbdbdb;text-align: center;color:#787878;}
@@ -77,7 +84,8 @@ body, html { min-width: 1080px;position:relative;}
 .main-c-l a{font-size: 14px;color:black;height: 30px;}
 .main-c-l p{font-size: 18px;color:red;padding-top: 10px;font-weight:bold;}
 .main-c-l strong{font-size: 12px;float:right;color:#CCC;}
-.main-b{background:url("../img/main.png") no-repeat;height: 90px;width: 1800px;position:absolute;bottom:0;}
+.main-c-l button{float:right;}
+.main-b{background:url("../img/main.png") no-repeat;height: 90px;width: 1263px;position:absolute;bottom:0;}
 .bottom{height: 222px;background:#f1f1f1;border-top:1px solid #ccc;}
 .bottom .container{height: 222px;}
 .bottom-t{height: 150px;border-bottom: 1px solid #E9E1E8;}
